@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Package2, MapPin, FileCheck, DollarSign, Users, Send } from "lucide-react";
+import LocationSearch from "@/components/LocationSearch";
 
 const Index = () => {
   return (
@@ -48,8 +49,15 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Location Search Section */}
+      <section className="w-full py-12 md:py-24 lg:py-32 bg-white">
+        <div className="container px-4 md:px-6">
+          <LocationSearch />
+        </div>
+      </section>
+
       {/* Features Section */}
-      <section id="features" className="w-full py-12 md:py-24 lg:py-32 bg-white">
+      <section id="features" className="w-full py-12 md:py-24 lg:py-32 bg-blue-50">
         <div className="container px-4 md:px-6">
           <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl text-center mb-12 text-blue-600">Features</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -73,7 +81,7 @@ const Index = () => {
       </section>
 
       {/* Pricing Section */}
-      <section id="pricing" className="w-full py-12 md:py-24 lg:py-32 bg-blue-50">
+      <section id="pricing" className="w-full py-12 md:py-24 lg:py-32 bg-white">
         <div className="container px-4 md:px-6">
           <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl text-center mb-12 text-blue-600">Pricing</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -115,7 +123,7 @@ const Index = () => {
       </section>
 
       {/* Testimonials Section */}
-      <section className="w-full py-12 md:py-24 lg:py-32 bg-white">
+      <section className="w-full py-12 md:py-24 lg:py-32 bg-blue-50">
         <div className="container px-4 md:px-6">
           <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl text-center mb-12 text-blue-600">What Our Users Say</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -131,7 +139,7 @@ const Index = () => {
       </section>
 
       {/* Contact Us Section */}
-      <section id="contact" className="w-full py-12 md:py-24 lg:py-32 bg-blue-50">
+      <section id="contact" className="w-full py-12 md:py-24 lg:py-32 bg-white">
         <div className="container px-4 md:px-6">
           <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl text-center mb-12 text-blue-600">Get in Touch</h2>
           <div className="max-w-md mx-auto">
