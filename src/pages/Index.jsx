@@ -3,6 +3,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Package2, MapPin, FileCheck, DollarSign, Users, Send } from "lucide-react";
 import LocationSearch from "@/components/LocationSearch";
+import { Link } from "react-router-dom";
 
 const Index = () => {
   return (
@@ -18,9 +19,10 @@ const Index = () => {
               </span>
             </a>
             <nav className="flex items-center space-x-6 text-sm font-medium">
-              <a className="transition-colors hover:text-[#21edc6] text-white/60" href="#features">Features</a>
-              <a className="transition-colors hover:text-[#21edc6] text-white/60" href="#pricing">Pricing</a>
-              <a className="transition-colors hover:text-[#21edc6] text-white/60" href="#contact">Contact Us</a>
+              <Link to="/" className="transition-colors hover:text-[#21edc6] text-white/60">Home</Link>
+              <Link to="/features" className="transition-colors hover:text-[#21edc6] text-white/60">Features</Link>
+              <a href="#pricing" className="transition-colors hover:text-[#21edc6] text-white/60">Pricing</a>
+              <a href="#contact" className="transition-colors hover:text-[#21edc6] text-white/60">Contact Us</a>
             </nav>
           </div>
           <div className="flex flex-1 items-center justify-between space-x-2 md:justify-end">
@@ -186,8 +188,8 @@ const Index = () => {
             <div>
               <h3 className="text-lg font-semibold mb-2">Quick Links</h3>
               <ul className="space-y-2">
-                <li><a href="#" className="hover:text-[#21edc6]">Home</a></li>
-                <li><a href="#features" className="hover:text-[#21edc6]">Features</a></li>
+                <li><Link to="/" className="hover:text-[#21edc6]">Home</Link></li>
+                <li><Link to="/features" className="hover:text-[#21edc6]">Features</Link></li>
                 <li><a href="#pricing" className="hover:text-[#21edc6]">Pricing</a></li>
                 <li><a href="#contact" className="hover:text-[#21edc6]">Contact Us</a></li>
               </ul>

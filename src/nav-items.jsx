@@ -1,5 +1,6 @@
-import { Home, Package2, DollarSign, Mail } from "lucide-react";
+import { Home, Package2, DollarSign, Mail, Map } from "lucide-react";
 import Index from "./pages/Index.jsx";
+import Features from "./pages/Features.jsx";
 
 /**
  * Central place for defining the navigation items. Used for navigation components and routing.
@@ -13,8 +14,9 @@ export const navItems = [
   },
   {
     title: "Features",
-    to: "/#features",
-    icon: <Package2 className="h-4 w-4" />,
+    to: "/features",
+    icon: <Map className="h-4 w-4" />,
+    page: <Features />,
   },
   {
     title: "Pricing",
