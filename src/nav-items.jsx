@@ -1,4 +1,4 @@
-import { Home, Package2, DollarSign, Mail, Map, LogIn } from "lucide-react";
+import { Home, Package2, Info, Mail, Map } from "lucide-react";
 import Index from "./pages/Index.jsx";
 import Features from "./pages/Features.jsx";
 import Auth from "./pages/Auth.jsx";
@@ -14,15 +14,15 @@ export const navItems = [
     page: <Index />,
   },
   {
-    title: "Features",
+    title: "Solutions",
     to: "/features",
     icon: <Map className="h-4 w-4" />,
     page: <Features />,
   },
   {
-    title: "Pricing",
-    to: "/#pricing",
-    icon: <DollarSign className="h-4 w-4" />,
+    title: "About Us",
+    to: "/#about",
+    icon: <Info className="h-4 w-4" />,
   },
   {
     title: "Contact",
@@ -32,7 +32,7 @@ export const navItems = [
   {
     title: "Login/Sign Up",
     to: "/auth",
-    icon: <LogIn className="h-4 w-4" />,
+    icon: <Package2 className="h-4 w-4" />,
     page: <Auth />,
   },
 ];

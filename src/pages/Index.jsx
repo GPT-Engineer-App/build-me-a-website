@@ -1,8 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { Package2, MapPin, FileCheck, DollarSign, Users, Send } from "lucide-react";
-import LocationSearch from "@/components/LocationSearch";
+import { Package2, MapPin, FileCheck, DollarSign, Users, Send, Truck, Globe, BarChart } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const Index = () => {
@@ -20,14 +19,14 @@ const Index = () => {
             </a>
             <nav className="flex items-center space-x-6 text-sm font-medium">
               <Link to="/" className="transition-colors hover:text-[#21edc6] text-white/60">Home</Link>
-              <Link to="/features" className="transition-colors hover:text-[#21edc6] text-white/60">Features</Link>
-              <a href="#pricing" className="transition-colors hover:text-[#21edc6] text-white/60">Pricing</a>
-              <a href="#contact" className="transition-colors hover:text-[#21edc6] text-white/60">Contact Us</a>
+              <Link to="/features" className="transition-colors hover:text-[#21edc6] text-white/60">Solutions</Link>
+              <a href="#about" className="transition-colors hover:text-[#21edc6] text-white/60">About Us</a>
+              <a href="#contact" className="transition-colors hover:text-[#21edc6] text-white/60">Contact</a>
             </nav>
           </div>
           <div className="flex flex-1 items-center justify-between space-x-2 md:justify-end">
             <Button variant="ghost" className="text-base text-[#21edc6]">Login</Button>
-            <Button className="bg-[#21edc6] hover:bg-[#1bd6b1] text-[#0D1742]">Sign Up</Button>
+            <Button className="bg-[#21edc6] hover:bg-[#1bd6b1] text-[#0D1742]">Get Started</Button>
           </div>
         </div>
       </header>
@@ -38,10 +37,10 @@ const Index = () => {
           <div className="flex flex-col items-center space-y-4 text-center">
             <div className="space-y-2">
               <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none text-[#21edc6]">
-                Welcome to Zeus Connect AI
+                Digitizing Road Freight for a Sustainable Future
               </h1>
               <p className="mx-auto max-w-[700px] text-[#21edc6] md:text-xl">
-                Connecting Hauliers with Contracts Effortlessly
+                Zeus Connect AI is Europe's leading digital freight forwarder, offering shippers access to our connected network of carriers.
               </p>
             </div>
             <div className="space-x-4">
@@ -51,98 +50,42 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Benefits Section */}
-      <section className="w-full py-12 md:py-24 lg:py-32 bg-white">
+      {/* Solutions Section */}
+      <section id="solutions" className="w-full py-12 md:py-24 lg:py-32 bg-white">
         <div className="container px-4 md:px-6">
-          <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl text-center mb-12 text-[#0D1742]">Benefits of Zeus</h2>
+          <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl text-center mb-12 text-[#0D1742]">Our Solutions</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="flex flex-col items-center text-center">
-              <DollarSign className="h-12 w-12 mb-4 text-[#21edc6]" />
-              <h3 className="text-xl font-bold mb-2 text-[#0D1742]">Access to £8bn of Freight</h3>
-              <p className="text-[#0D1742]">Without the cost of normal haulier platforms.</p>
+              <Truck className="h-12 w-12 mb-4 text-[#21edc6]" />
+              <h3 className="text-xl font-bold mb-2 text-[#0D1742]">Full Truckload</h3>
+              <p className="text-[#0D1742]">Efficient and reliable full truckload services across Europe.</p>
             </div>
             <div className="flex flex-col items-center text-center">
-              <FileCheck className="h-12 w-12 mb-4 text-[#21edc6]" />
-              <h3 className="text-xl font-bold mb-2 text-[#0D1742]">2 Clicks to Relevant Freight</h3>
-              <p className="text-[#0D1742]">Get freight returned with benchmark price indicators.</p>
+              <Globe className="h-12 w-12 mb-4 text-[#21edc6]" />
+              <h3 className="text-xl font-bold mb-2 text-[#0D1742]">Logistics Platform</h3>
+              <p className="text-[#0D1742]">Digitized freight forwarding for seamless operations.</p>
             </div>
             <div className="flex flex-col items-center text-center">
-              <MapPin className="h-12 w-12 mb-4 text-[#21edc6]" />
-              <h3 className="text-xl font-bold mb-2 text-[#0D1742]">AI-Powered Route Optimization</h3>
-              <p className="text-[#0D1742]">Ensures realistic routes and can sense check against existing telematics of hauliers.</p>
+              <BarChart className="h-12 w-12 mb-4 text-[#21edc6]" />
+              <h3 className="text-xl font-bold mb-2 text-[#0D1742]">Data-Driven Insights</h3>
+              <p className="text-[#0D1742]">Optimize your supply chain with advanced analytics.</p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Location Search Section */}
-      <section className="w-full py-12 md:py-24 lg:py-32 bg-[#0D1742]">
+      {/* About Us Section */}
+      <section id="about" className="w-full py-12 md:py-24 lg:py-32 bg-[#0D1742]">
         <div className="container px-4 md:px-6">
-          <LocationSearch />
-        </div>
-      </section>
-
-      {/* Features Section */}
-      <section id="features" className="w-full py-12 md:py-24 lg:py-32 bg-white">
-        <div className="container px-4 md:px-6">
-          <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl text-center mb-12 text-[#0D1742]">Features</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="flex flex-col items-center text-center">
-              <MapPin className="h-12 w-12 mb-4 text-[#21edc6]" />
-              <h3 className="text-xl font-bold mb-2 text-[#0D1742]">Find Contracts Nearby</h3>
-              <p className="text-[#0D1742]">Easily locate available contracts within your proximity.</p>
+          <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl text-center mb-12 text-[#21edc6]">About Zeus Connect AI</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            <div>
+              <p className="text-lg text-white mb-4">Zeus Connect AI is revolutionizing the European road freight industry through digitalization and sustainability.</p>
+              <p className="text-lg text-white mb-4">Our mission is to create a more efficient and environmentally friendly logistics ecosystem.</p>
+              <p className="text-lg text-white">With a vast network of carriers and cutting-edge technology, we're shaping the future of freight forwarding.</p>
             </div>
-            <div className="flex flex-col items-center text-center">
-              <Users className="h-12 w-12 mb-4 text-[#21edc6]" />
-              <h3 className="text-xl font-bold mb-2 text-[#0D1742]">Join for Exclusive Benefits</h3>
-              <p className="text-[#0D1742]">Access exclusive contracts and opportunities.</p>
-            </div>
-            <div className="flex flex-col items-center text-center">
-              <FileCheck className="h-12 w-12 mb-4 text-[#21edc6]" />
-              <h3 className="text-xl font-bold mb-2 text-[#0D1742]">Tender on Your Behalf</h3>
-              <p className="text-[#0D1742]">Let us handle the tendering process for you.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Pricing Section */}
-      <section id="pricing" className="w-full py-12 md:py-24 lg:py-32 bg-[#0D1742]">
-        <div className="container px-4 md:px-6">
-          <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl text-center mb-12 text-[#21edc6]">Pricing</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="flex flex-col p-6 bg-white rounded-lg shadow-lg">
-              <h3 className="text-2xl font-bold mb-4 text-[#0D1742]">Basic</h3>
-              <p className="text-4xl font-bold mb-6 text-[#0D1742]">$10<span className="text-base font-normal">/month</span></p>
-              <ul className="mb-6 space-y-2">
-                <li className="flex items-center">
-                  <DollarSign className="h-5 w-5 mr-2 text-[#21edc6]" />
-                  <span className="text-[#0D1742]">Access to basic features</span>
-                </li>
-              </ul>
-              <Button className="mt-auto bg-[#21edc6] hover:bg-[#1bd6b1] text-[#0D1742]">Choose Plan</Button>
-            </div>
-            <div className="flex flex-col p-6 bg-[#21edc6] rounded-lg shadow-lg border-2 border-[#1bd6b1]">
-              <h3 className="text-2xl font-bold mb-4 text-[#0D1742]">Pro</h3>
-              <p className="text-4xl font-bold mb-6 text-[#0D1742]">$20<span className="text-base font-normal">/month</span></p>
-              <ul className="mb-6 space-y-2">
-                <li className="flex items-center">
-                  <DollarSign className="h-5 w-5 mr-2 text-[#0D1742]" />
-                  <span className="text-[#0D1742]">Access to all features</span>
-                </li>
-              </ul>
-              <Button className="mt-auto bg-[#0D1742] hover:bg-[#0a1130] text-[#21edc6]">Choose Plan</Button>
-            </div>
-            <div className="flex flex-col p-6 bg-white rounded-lg shadow-lg">
-              <h3 className="text-2xl font-bold mb-4 text-[#0D1742]">Enterprise</h3>
-              <p className="text-4xl font-bold mb-6 text-[#0D1742]">Contact Us</p>
-              <ul className="mb-6 space-y-2">
-                <li className="flex items-center">
-                  <DollarSign className="h-5 w-5 mr-2 text-[#21edc6]" />
-                  <span className="text-[#0D1742]">Customized solutions for large fleets</span>
-                </li>
-              </ul>
-              <Button className="mt-auto bg-[#21edc6] hover:bg-[#1bd6b1] text-[#0D1742]">Contact Sales</Button>
+            <div className="flex justify-center">
+              <img src="/path-to-your-image.jpg" alt="Zeus Connect AI Team" className="rounded-lg shadow-lg" />
             </div>
           </div>
         </div>
@@ -151,13 +94,13 @@ const Index = () => {
       {/* Testimonials Section */}
       <section className="w-full py-12 md:py-24 lg:py-32 bg-white">
         <div className="container px-4 md:px-6">
-          <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl text-center mb-12 text-[#0D1742]">What Our Users Say</h2>
+          <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl text-center mb-12 text-[#0D1742]">What Our Clients Say</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[1, 2, 3].map((i) => (
               <div key={i} className="flex flex-col items-center text-center">
-                <img src={`https://i.pravatar.cc/150?img=${i}`} alt={`User ${i}`} className="w-24 h-24 rounded-full mb-4" />
-                <p className="text-lg font-medium mb-2 text-[#0D1742]">John Doe</p>
-                <p className="text-[#0D1742]">"Zeus Connect AI has revolutionized how I find and manage contracts. It's a game-changer for hauliers!"</p>
+                <img src={`https://i.pravatar.cc/150?img=${i}`} alt={`Client ${i}`} className="w-24 h-24 rounded-full mb-4" />
+                <p className="text-lg font-medium mb-2 text-[#0D1742]">Client Name</p>
+                <p className="text-[#0D1742]">"Zeus Connect AI has transformed our logistics operations, providing unparalleled efficiency and transparency."</p>
               </div>
             ))}
           </div>
@@ -189,9 +132,9 @@ const Index = () => {
               <h3 className="text-lg font-semibold mb-2">Quick Links</h3>
               <ul className="space-y-2">
                 <li><Link to="/" className="hover:text-[#21edc6]">Home</Link></li>
-                <li><Link to="/features" className="hover:text-[#21edc6]">Features</Link></li>
-                <li><a href="#pricing" className="hover:text-[#21edc6]">Pricing</a></li>
-                <li><a href="#contact" className="hover:text-[#21edc6]">Contact Us</a></li>
+                <li><Link to="/features" className="hover:text-[#21edc6]">Solutions</Link></li>
+                <li><a href="#about" className="hover:text-[#21edc6]">About Us</a></li>
+                <li><a href="#contact" className="hover:text-[#21edc6]">Contact</a></li>
               </ul>
             </div>
             <div>
