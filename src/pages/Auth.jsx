@@ -15,10 +15,10 @@ const Auth = () => {
   };
 
   return (
-    <div className="flex items-center justify-center min-h-screen bg-[#0D1742]">
+    <div className="flex items-center justify-center min-h-screen bg-background">
       <Card className="w-[350px]">
         <CardHeader>
-          <CardTitle>Zeus Connect AI</CardTitle>
+          <CardTitle>HaulAI</CardTitle>
           <CardDescription>Login or create an account</CardDescription>
         </CardHeader>
         <CardContent>
@@ -44,7 +44,7 @@ const Auth = () => {
                     onChange={(e) => setPassword(e.target.value)}
                     required
                   />
-                  <Button type="submit" className="w-full">Login</Button>
+                  <Button type="submit" className="w-full bg-primary text-primary-foreground hover:bg-primary/90">Login</Button>
                 </div>
               </form>
             </TabsContent>
@@ -65,14 +65,14 @@ const Auth = () => {
                     onChange={(e) => setPassword(e.target.value)}
                     required
                   />
-                  <Button type="submit" className="w-full">Sign Up</Button>
+                  <Button type="submit" className="w-full bg-primary text-primary-foreground hover:bg-primary/90">Sign Up</Button>
                 </div>
               </form>
             </TabsContent>
           </Tabs>
         </CardContent>
         <CardFooter className="flex justify-center">
-          <p className="text-sm text-gray-500">
+          <p className="text-sm text-muted-foreground">
             By continuing, you agree to our Terms of Service and Privacy Policy.
           </p>
         </CardFooter>
